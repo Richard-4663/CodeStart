@@ -26,8 +26,7 @@ O site é **100% responsivo**, funcionando bem em desktop, tablet e celular, e u
 ## 📁 Estrutura do Projeto
 
 <pre><code>
-HTMLs/
-├── index.html
+index.html
 CSSs/
 ├── style.css
 JSs/
