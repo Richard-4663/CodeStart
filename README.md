@@ -58,7 +58,13 @@ Acesse a landing page online: [CodeStart no GitHub Pages](https://richard-4663.g
 
 ## 📷 Prints / Demonstração
 
-*(Você pode adicionar imagens ou GIFs mostrando a responsividade e animações do site)*
+<img width="1920" height="1080" alt="Captura de Tela (18)" src="https://github.com/user-attachments/assets/3b5a1c56-8502-48b4-ba1a-dc9f210dbc36" />
+<img width="1920" height="1080" alt="Captura de Tela (19)" src="https://github.com/user-attachments/assets/840fcee4-4eb0-4ad5-99e2-4a744ad9c28c" />
+<img width="1920" height="1080" alt="Captura de Tela (20)" src="https://github.com/user-attachments/assets/95c4eafa-3d19-46fd-9441-5cf40230e329" />
+<img width="1920" height="1080" alt="Captura de Tela (21)" src="https://github.com/user-attachments/assets/8f0de516-5db3-4ce2-8a1f-1f862a2ede7b" />
+<img width="1920" height="1080" alt="Captura de Tela (22)" src="https://github.com/user-attachments/assets/889eafca-4cc1-48db-aab2-ee92a0da1239" />
+<img width="1920" height="1080" alt="Captura de Tela (23)" src="https://github.com/user-attachments/assets/b84cfc6b-656b-4d59-aee8-bcc4358fb749" />
+<img width="1920" height="1080" alt="Captura de Tela (24)" src="https://github.com/user-attachments/assets/9b5b75bc-e008-48bf-904e-69faab602c0b" />
 
 ---
 
