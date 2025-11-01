@@ -1,0 +1,189 @@
+/* variáveis de cores */
+:root {
+    --cor-tema: #1a5bd4;
+    --cor-hover: #092652;
+    --cor-fundo: #001831;
+    --cor-preto: #000000;
+    --cor-branca: #ffffff;
+    --cor-gradient: #ffffff;
+}   
+
+/* #region - estilizando a section inicial */
+
+.img-container {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 70vh;
+    overflow: hidden;
+}
+
+/* texto inicial */
+.img-container .card-inicial {
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 2.5rem;
+    text-align: center;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+    padding: 0 20px;
+}
+
+.comece-agora {
+    background-color: var(--cor-tema);
+    padding: 5px 10px;
+    font-size: 1.1rem;
+    text-decoration: none;
+}
+
+.comece-agora:hover {
+    background-color: var(--cor-hover);
+    color: #ffffff;
+    text-decoration: none;
+}
+
+/* #endregion */
+
+/* #region - animações */
+@keyframes shake {
+    0% { transform: translate(0, 0); }
+    25% { transform: translate(-5px, 0); }
+    50% { transform: translate(5px, 0); }
+    75% { transform: translate(-5px, 0); }
+    100% { transform: translate(0, 0); }
+    
+}
+   
+@keyframes fadeOut {
+    from { opacity: 1; }
+    to { opacity: 0; }
+}
+
+@keyframes sliderInfinite {
+    0%{
+        transform: translateX(0);
+    }
+    100%{
+        transform: translateX(-50%);
+    }
+}
+
+
+/* #endregion */
+
+/* #region - checkbox da troca de tema */
+.checkbox{
+    opacity: 0;
+    position: absolute;
+    display: none;
+}
+
+.checkbox-label{
+    background-image: linear-gradient(to right, var(--cor-preto), var(--cor-tema));
+    width: 50px;
+    height: 26px;
+    border-radius: 50px;
+    position: relative;
+    padding: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.fa-moon{
+    color: #f1c40f;
+}
+.fa-sun{
+    color: #f39c12;
+}
+
+.checkbox-label .ball{
+    background-color: #fff;
+    width: 22px;
+    height: 22px;
+    border-radius: 50%;
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    transition: transform 0.2s linear;
+}
+
+.checkbox:checked + .checkbox-label .ball{
+    transform: translate(24px);
+}
+
+.checkbox-label:hover{
+    cursor: pointer;
+}
+
+#checkbox{
+    display: none;
+}
+
+/* #endregion */
+
+/* #region - estilização da section dos depoimentos */
+.depoimentos-container {
+    gap: 1em;
+    justify-content: center;
+    align-items: center;
+}
+
+.carrosel-card{
+    margin: 0 auto;
+    width: 20em;
+    height: 16em;
+    padding: 1em;
+    align-content: center;
+    transition: 0.3s;
+}
+
+.carrosel-card:hover{
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.25);
+}
+
+.carrosel {
+  position: relative;
+  overflow: hidden;
+}
+
+.carrosel::before,
+.carrosel::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  width: 150px;
+  height: 100%;
+  z-index: 2; 
+  pointer-events: none; 
+}
+
+/* Gradiente da esquerda */
+.carrosel::before {
+  left: 0;
+  background: linear-gradient(to right, var(--cor-gradient), transparent 100%);
+}
+
+/* Gradiente da direita */
+.carrosel::after {
+  right: 0;
+  background: linear-gradient(to left, var(--cor-gradient), transparent 100%);
+}
+
+/* #endregion */
+
+@media (max-width: 400px) {
+    .texto-final{
+        font-size: 22px;
+        width: 200% !important;
+    }
+
+    .comece-agora-final{
+        width: 150%;
+        font-size: 15px;
+    }
+}
